@@ -1,6 +1,6 @@
 name: squarebox
 markdown: redcarpet
-highlighter: true
+pygments: true
 excerpt_separator: <!--more-->
 gems: [jekyll-paginate]
 paginate: 3
