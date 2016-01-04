@@ -1,6 +1,6 @@
 @font-face {
   font-famlily: 'child';
-  src: url('../fonts/child/child.ttf');
+  src: url('{{ site.url }}/fonts/child/child.ttf');
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
