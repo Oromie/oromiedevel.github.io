@@ -83,6 +83,10 @@ img {
   max-width: none !important;
 }
 
+.slidesp {
+  font-family: 'child';
+}
+
 .left {
   float: left !important;
 }
@@ -3620,7 +3624,7 @@ kbd {
   position: absolute;
   bottom: 0;
   background-color: rgba(51, 51, 51, 0);
-  color: #803232;
+  color: #ffffff;
   width: 100%;
   padding: 0.625rem 0.875rem;
   font-size: 0.875rem;
