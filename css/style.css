@@ -146,8 +146,8 @@ h1, h2, h3, h4 {
 }
 
 .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
-  background: #444444;
-  color: #eeeeee;
+  background: #fff2e4;
+  color: #a05252;
 }
 
 /*special title */
@@ -457,7 +457,7 @@ textarea {
   color: rgba(255, 255, 255, 1.0);
   background-color: rgba(200, 200, 200, 0.0);
   display: inline-block;
-  padding: 9px 75px 4px;
+  padding: 9px 87px 4px;
   font-size: 2.75rem;
   letter-spacing: 3px;
   border-radius: 25px;
