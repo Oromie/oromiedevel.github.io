@@ -5006,6 +5006,12 @@ meta.foundation-mq-topbar {
   text-transform: none;
   background: $light;
 }
+@media only screen and (max-width: 40em) {
+  .top-bar-section ul li > a {
+    color: #fff2e4;
+  }
+>>>>>>> Modificada cores do topo, tanto para versao full como para celular:css/framework.css
+}
 .top-bar-section ul li > a.button {
   font-size: 1rem;
   padding-right: 20px;
@@ -5334,8 +5340,8 @@ meta.foundation-mq-topbar {
     background: $dark-menu;
   }
   .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
-    color: #0000ff;
-    background: #00ff00;
+    color: #fff2e4;
+    background: #a05252;
   }
   .top-bar-section .dropdown li label {
     white-space: nowrap;
