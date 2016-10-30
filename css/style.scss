@@ -734,3 +734,22 @@ ul.info i:hover {
   font-size: 0.875rem;
   color: #999999;
 }
+
+#instafeed {
+  height: 310px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#instafeed img{
+  /*display: block;*/
+  padding: 5px;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: opacity 0.4s;
+}
+
+#instafeed img:hover {
+  opacity: 0.7;
+}
+
