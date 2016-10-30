@@ -6,8 +6,8 @@
       path: index.html
     - name: Home alternative
       path: index-alternative.html
-- name: Services
-  path: services.html
+- name: Portfolio
+  path: \#portfolio
   section_id: services
 - name: About
   path: about.html
