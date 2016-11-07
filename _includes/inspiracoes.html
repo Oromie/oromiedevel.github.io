@@ -1,11 +1,12 @@
 <div class='full white centered-text'>
   <div class='row'>
     <div class='special-title centered-text'>
+      <i class='icon-star'></i>
       <h2>Inspirações</h2>
-      <p>O que nos movimenta</p>
+      <p class='shortline'></p>
     </div>
-  </div>
-  <div class='spacing'></div>
+    <div class='spacing'></div>
+
   <div class='row'>
     {% for why in site.data.inspiracoes %}
       {% if include.shape %}
@@ -14,7 +15,8 @@
         {% assign shape = "boxed" %}
       {% endif %}
       <div class='medium-3 large-2m columns icon-text-{{shape}}'>
-        <i class='icon-{{ why.icon }}'></i>
+        <img src="{{ site.url }}images/{{ why.icon }}" />
+        <div class='spacing'></div>
         <h3>{{ why.title }}</h3>
         <p>{{ why.desc }}</p>
       </div>

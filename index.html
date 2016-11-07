@@ -31,29 +31,36 @@ works:
 pvendas:
   -
     - title: Lalique
-      icon: layout
+      icon: lalique.jpg
       desc:
-        Descrição. Carlos Botelho
+        Av. Dr. Carlos Botelho, 2120 <br /> Loja 01 - Posto Bandeira 3 <br />
+        São Carlos / SP
       color:
       display: icon-text
+      socials:
+        - name: Facebook
+          link: http://facebook.com/laliquejoias/
+          color: yellow
     - title: Trampo S/A
       icon: layout
       desc:
         Trampo S/A blablabla
       color:
       display: icon-text
+      socials:
+        - name: Facebook
+          link: #
+          color: yellow
     - title: 
       icon: 
       desc:
         
       color:
       display:
-    - title: 
-      icon: 
-      desc:
-        
-      color:
-      display:
+      socials:
+        - name: 
+          link: 
+          color:
 
 milestones:
   - from: 0
@@ -80,7 +87,7 @@ bars:
     percent: 61
 
 members:
-  - image: member-1.png
+  - image: mariana.jpg
     name: Mariana Cruz
     position: Idealizadora &amp; Artista
     desc:
@@ -116,6 +123,7 @@ members:
 
 
 
+<a name="home" style="position: relative; top: -88px;"></a>
 {% include slider.html %}
 
 <!--div class='full light-yellow'>
@@ -159,7 +167,7 @@ members:
 <div class='full'>
   <div class='row'>
     <div class='special-title centered-text'>
-      <!--i class='icon-star'></i-->
+      <i class='icon-picture'></i>
       <h2>Portfolio</h2>
       <p class='shortline'></p>
     </div>
@@ -170,7 +178,7 @@ members:
   {% for work in page.works %}
     <li>
       <a>
-        <img src='{{site.url}}/images/{{ work.image }}'>
+        <img src='{{site.url}}images/{{ work.image }}'>
         <div class='overlay'>
           <div class='thumb-info'>
             <h3>{{ work.title }}</h3>
@@ -183,7 +191,7 @@ members:
 </ul>
 
 <div class='full dark-blue no-padding'>
-  <div class='two spacing'></div>
+  <div class='spacing'></div>
   <div class='row'>
     <div class='call-to-action light'>
       <div class='medium-9 large-9 columns'>
@@ -194,9 +202,9 @@ members:
       </div>
     </div>
   </div>
-  <div class='two spacing'></div>
 </div>
 
+<a name="inspiracoes" style="position: relative; top: -88px;"></a>
 {% include inspiracoes.html %}
 
 
@@ -216,11 +224,14 @@ members:
 
 
 
+<a name="quemsomos" style="position: relative; top: -88px;"></a>
 <div class='members'>
   <div class='full light-yellow'>
     <div class='row'>
       <div class='special-title centered-text'>
+        <i class='icon-users'></i>
         <h2>Quem somos</h2>
+        <p class='shortline'></p>
       </div>
       {% for member in page.members %}
         {% if forloop.first %}
@@ -239,7 +250,7 @@ members:
       {% endfor %}
     </div>
   </div>
-  <div class='full white'>
+  <div class='full light-yellow'>
     <div class='row'>
       {% for member in page.members %}
         {% if forloop.first %}
@@ -268,6 +279,7 @@ members:
   </div>
 </div>
 
+<a name="instagram" style="position: relative; top: -88px;"></a>
 <div class='full'>
   <!-- 300px eh o suficiente para 2 linhas -->
   <div class='special-title centered-text'>
@@ -276,6 +288,7 @@ members:
   <div id="instafeed"></div>
 </div>
 
+<a name="pontosvenda" style="position: relative; top: -88px;"></a>
 <div class='full white'>
   <div class='row'>
     <div class='special-title centered-text'>
@@ -291,11 +304,48 @@ members:
     <div class="row">
       {% for loja in row %}
         <div class='medium-4 large-4 columns {{loja.display}}'>
-          <i class='icon-{{loja.icon}} {{loja.color}}'></i>
           <h3>{{loja.title}}</h3>
+          <p><img src='{{site.url}}images/{{loja.icon}}' style='width: 70%;'/> </p>
           <p>{{loja.desc}}</p>
+          {% for social in loja.socials %}
+            <p>{{social.name}}: <a href='{{social.link}}'>
+                {{social.link}}
+            </a></p>
+          {% endfor %}
         </div>
       {% endfor %}
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key= AIzaSyC68X6-rfy3QlwdiI1XTelpfvYgfwu4WwA '>
+</script>
+<div style='overflow:hidden;height:300px;width:100%;'>
+    <div id='gmap_canvas' style='height:300px;width:100%;'></div>
+    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+<a href='http://maps-generator.com/pt'>maps-generator.com</a>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e3607bd16743aada7bca1157c8e798366da6fe29'></script>
+
+<script type='text/javascript'>
+function init_map(){
+    var myOptions = {
+        zoom:13,
+        center:new google.maps.LatLng(-22.0000000,-47.89500250000003),
+        mapTypeId: google.maps.MapTypeId.ROADMAP};
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+
+    marker1 = new google.maps.Marker({map: map,position: new google.maps.LatLng(-22.0115531,-47.890266499999996)});
+    infowindow1 = new google.maps.InfoWindow({content:'<strong>Lalique</strong><br>Av. Dr. Carlos Botelho, 2120 <br> Sao Carlos<br>'});
+    google.maps.event.addListener(marker1, 'click', function(){infowindow1.open(map,marker1);});infowindow1.open(map,marker1);
+
+    marker2 = new google.maps.Marker({map: map,position: new google.maps.LatLng(-21.9974103,-47.89762059999998)});
+    infowindow2 = new google.maps.InfoWindow({content:'<strong>Trampo S.A.</strong><br>R. Iwagiro Toyama, 81<br> Sao Carlos<br>'});
+    google.maps.event.addListener(marker2, 'click', function(){infowindow2.open(map,marker2);});infowindow2.open(map,marker2);
+
+};
+google.maps.event.addDomListener(window, 'load', init_map);
+
+</script>
+
+
+
     </div>
     {% unless forloop.last %}
       <div class="spacing"></div>
@@ -304,16 +354,16 @@ members:
 </div>
 
 <div class='full dark-blue no-padding'>
-  <div class='two spacing'></div>
+  <div class='spacing'></div>
   <div class='row'>
     <div class='call-to-action light'>
-      <center><a href='' target='_blank'><p>Clique aqui para acessar nossa loja virtual</p></a></center>
+      <center><a href='http://oromie.iluria.com/' target='_blank'><p>Clique aqui para acessar nossa loja virtual</p></a></center>
     </div>
   </div>
-  <div class='two spacing'></div>
 </div>
 <!--{% include testimonials.html bg="bg-2" %}-->
 
 <!--{% include clients.html %}-->
 
+<a name="faleconosco" style="position: relative; top: -88px;"></a>
 {% include get-in-touch.html %}
