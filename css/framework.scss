@@ -4873,8 +4873,8 @@ meta.foundation-mq-topbar {
 
 .top-bar {
   overflow: hidden;
-  height: 100px;
-  line-height: 100px;
+  height: 70px;
+  line-height: 70px;
   position: relative;
   background: $light;
   margin-bottom: 0;
@@ -4907,12 +4907,12 @@ meta.foundation-mq-topbar {
   margin: 0;
 }
 .top-bar .name {
-  height: 100px;
+  height: 70px;
   margin: 0;
   font-size: 16px;
 }
 .top-bar .name h1 {
-  line-height: 100px;
+  line-height: 70px;
   font-size: 1.875rem;
   margin: 0;
 }
@@ -5265,7 +5265,7 @@ meta.foundation-mq-topbar {
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 20px;
-    line-height: 100px;
+    line-height: 70px;
     background: $light;
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -5274,7 +5274,7 @@ meta.foundation-mq-topbar {
   }
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 20px;
-    line-height: 100px;
+    line-height: 70px;
     color: $light-int;
     background: $dark-hover;
     font-weight: bold;
