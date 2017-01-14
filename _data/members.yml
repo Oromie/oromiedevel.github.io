@@ -1,0 +1,17 @@
+  - image: mariana.jpg
+    name: Mariana Cruz
+    position: Idealizadora &amp; Artista
+    desc:
+      "Oromie nasceu do amor..."
+    form:
+      "Minha formação: "
+    socials:
+      - name: facebook
+        link: #
+        color: yellow
+      - name: instagram
+        link: #
+        color: yellow
+      - name: mail
+        link: #
+        color: yellow

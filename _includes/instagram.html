@@ -1,0 +1,23 @@
+{% assign slink = '{{link}}' %}
+{% assign simage = '{{image}}' %}
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '2328294437',
+        accessToken: '2328294437.1677ed0.b7390cb6a63d4c4a8e0bcf288b135e5f',
+        sortBy: 'most-recent',
+        limit: '30',
+        template: '<a href="{{slink}}" target="_blank"><img src="http:{{simage}}" /></a>'
+    });
+    feed.run();
+</script>
+
+<a name="instagram" style="position: relative; top: -88px;"></a>
+<div class='full'>
+  <!-- 300px eh o suficiente para 2 linhas -->
+  <div class='special-title centered-text'>
+    <p>@oromie.arte</p>
+  </div>
+  <div id="instafeed"></div>
+</div>

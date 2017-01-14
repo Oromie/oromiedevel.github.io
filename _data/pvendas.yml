@@ -1,0 +1,44 @@
+  -
+    - title: Lalique
+      icon: lalique.jpg
+      desc:
+        Av. Dr. Carlos Botelho, 2120 <br /> Loja 01 - Posto Bandeira 3 <br />
+        São Carlos / SP
+      color:
+      display: icon-text
+      socials:
+        - name: facebook
+          link: http://facebook.com/laliquejoias/
+          color: yellow
+        - name: instagram
+          link: https://www.instagram.com/laliquejoias/
+          color: yellow
+    - title: Trampo S/A
+      icon: tramposa.png
+      desc:
+        R. Iwagiro Toyama, 81<br />Jardim Paulistano<br />São Carlos / SP
+      color:
+      display: icon-text
+      socials:
+        - name: facebook
+          link: https://facebook.com/tramposa.ec/
+          color: yellow
+        - name: twitter
+          link: http://www.twitter.com/tramposaec
+          color: yellow
+        - name: gplus
+          link: https://plus.google.com/u/1/102500476504920757098/posts?hl=pt-BR
+          color: yellow
+        - name: instagram
+          link: http://www.instagram.com/tramposa.ec
+          color: yellow
+    - title: Loja Online 
+      icon: logo_thumbnail.png
+      desc: <a link=http://oromie.iluria.com/>http://oromie.iluria.com/</a>
+        
+      color:
+      display:
+      socials:
+        - name: 
+          link: 
+          color:
