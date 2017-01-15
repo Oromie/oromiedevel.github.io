@@ -1,10 +1,10 @@
-  - image: mariana.jpg
+  - image: '2015-12-01 14.31.31_red.jpg'
     name: Mariana Cruz
     position: Idealizadora &amp; Artista
     desc:
-      "Oromie nasceu do amor..."
-    form:
-      "Minha formação: "
+      'Eu sou Mariana Cruz, muito prazer. Oromi, palavra Yorubá, de origem africana, significa “minha força”. A referência é a deusa Oxum, orixá da beleza e do amor. Ela transmite energia, sensualidade e poder. A Oromie nasceu do meu amor por produzir com as mãos. Do meu amor por ter ideias e colocá-las no mundo. Minha formação é em Artes Visuais. Trabalhei com todo o tipo de material, e só com o passar do tempo fui percebendo que o suporte da minha produção artística não era a parede ou um módulo de madeira e, sim, o corpo! Que o meu trabalho precisava da vida, do movimento, do Axé do corpo para ter sentido e se fazer completo. Acredito que o modo como nos apresentamos ao mundo faz parte da nossa forma de existir e nos define sobretudo para nós mesmas. Cada peça Oromie celebra a sacralidade que é estar viva e estar em sintonia com nosso eu genuíno. As nossas peças externalizam a identidade e os sentimentos de quem as usa, permitem que cada mulher possa disfrutar de sua beleza única e inspirar amor por si mesma.'
+    #form:
+    #  "Minha formação: "
     socials:
       - name: facebook
         link: https://www.facebook.com/mariana.cruz.5836
