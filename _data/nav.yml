@@ -1,27 +1,27 @@
 - name: Home
-  path: \#home
+  path: '#home'
   section_id: home
   target:
 - name: Portfolio
-  path: \#portfolio
+  path: '#portfolio'
   section_id: services
   target:
 - name: Quem somos
-  path: \#quemsomos
+  path: '#quemsomos'
   section_id: portfolio
   target:
 - name: Compre
-  path: \#pontosvenda
+  path: '#pontosvenda'
   section_id: blog
   target:
   children:
     - name: Pontos de Venda
-      path: \#pontosvenda
+      path: '#pontosvenda'
       target: 
     - name: Loja Online
       path: http://oromie.iluria.com/
       target: _blank
 - name: Fale conosco
-  path: \#faleconosco
+  path: '#faleconosco'
   section_id: blog
   target: 
