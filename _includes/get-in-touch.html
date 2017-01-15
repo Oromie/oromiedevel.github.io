@@ -14,15 +14,20 @@
 <div class='full yellow'>
   <div class='form'>
     <div class='row'>
+        <form action="https://getsimpleform.com/messages?form_api_token=f1f8da1415197ef834fbbb5c2dbd03db" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <!--input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /-->
+  <!-- all your input fields here.... -->
       <div class='medium-6 large-6 columns'>
-        <input placeholder='Nome' type='text'>
-        <input placeholder='e-mail' type='text'>
-        <input placeholder='Assunto' type='text'>
+        <input placeholder='Nome' type='text' name='nome'>
+        <input placeholder='e-mail' type='text' name='email'>
+        <input placeholder='Assunto' type='text' name='assunto'>
       </div>
       <div class='medium-6 large-6 columns'>
-        <textarea placeholder='Mensagem'></textarea>
-        <input class='button white' type='submit'>
+        <textarea placeholder='Mensagem' name='mensagem'></textarea>
+        <input class='button white' type='submit' value='Enviar' name='enviar'>
       </div>
+        </form>
     </div>
   </div>
 </div>
