@@ -11,9 +11,16 @@
   section_id: portfolio
   target:
 - name: Compre
-  path: http://oromie.iluria.com
+  path: \#pontosvenda
   section_id: blog
-  target: _blank
+  target:
+  children:
+    - name: Pontos de Venda
+      path: \#pontosvenda
+      target: 
+    - name: Loja Online
+      path: http://oromie.iluria.com/
+      target: _blank
 - name: Fale conosco
   path: \#faleconosco
   section_id: blog
