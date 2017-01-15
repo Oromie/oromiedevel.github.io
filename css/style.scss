@@ -528,6 +528,9 @@ ul.gallery li a p {
   font-family: "droid serif", georgia;
   font-size: 0.875rem;
   font-style: italic;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 110px;
 }
 ul.gallery li a:hover .overlay {
   opacity: 1;
