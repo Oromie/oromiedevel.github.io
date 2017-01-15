@@ -5012,7 +5012,7 @@ meta.foundation-mq-topbar {
 }
 @media only screen and (max-width: 40em) {
   .top-bar-section ul li > a {
-    color: #fff2e4;
+    color: $dark-hover;
   }
 }
 .top-bar-section ul li > a.button {
@@ -5066,7 +5066,7 @@ meta.foundation-mq-topbar {
   padding-left: 20px;
   background-color: #ffff00;
   border-color: #eda703;
-  color: $dark;;
+  color: $dark;
 }
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
   background-color: #00ffff;
@@ -5174,6 +5174,7 @@ meta.foundation-mq-topbar {
 .top-bar-section .dropdown li a {
   font-weight: bold;
   padding: 8px 20px;
+  font-family: oromie-menu;
 }
 .top-bar-section .dropdown li a.parent-link {
   font-weight: bold;
@@ -5343,8 +5344,8 @@ meta.foundation-mq-topbar {
     background: $dark-menu;
   }
   .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
-    color: #fff2e4;
-    background: #a05252;
+    color: $dark-hover;
+    background: $light;
   }
   .top-bar-section .dropdown li label {
     white-space: nowrap;
